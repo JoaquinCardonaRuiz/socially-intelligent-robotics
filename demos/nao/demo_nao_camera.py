@@ -17,7 +17,7 @@ def on_image(image_message: CompressedImageMessage):
 # See "NaoqiCameraConf" for more options like brightness, contrast, sharpness, etc
 conf = NaoqiCameraConf(vflip=1)
 
-nao = Nao(ip="192.168.0.0", top_camera_conf=conf)
+nao = Nao(ip="10.0.0.236", top_camera_conf=conf)
 nao.top_camera.register_callback(on_image)
 
 while True:

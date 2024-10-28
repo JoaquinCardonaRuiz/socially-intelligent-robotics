@@ -24,3 +24,5 @@ build
 # Ignore dialogflow keyfiles
 conf/dialogflow/*.json
 
+venv_sic/*
+src/credentials.json
