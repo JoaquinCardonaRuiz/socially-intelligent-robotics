@@ -4,12 +4,12 @@ from sic_framework.devices.common_naoqi.naoqi_text_to_speech import (
 )
 import json
 from openai import OpenAI
-credentials = json.load(open("credentials.json", "r"))
+credentials = json.load(open("src/credentials.json", "r"))
 client = OpenAI(api_key=credentials["openai"])
 
 
 
-nao = Nao(ip="10.0.0.236")  # adjust this to the IP adress of your robot.
+nao = Nao(ip="10.0.0.121")  # adjust this to the IP adress of your robot.
 
 def ask_llm(query_text, system_prompt, temp=1.1):
     # Fetch a response from the LLM
